@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Calculator {
 	public static void main(String args[]){
@@ -10,5 +10,6 @@ public class Calculator {
 		snum = name.nextDouble();
 		answer = fnum + snum;
 		System.out.println(answer);
+		name.close();
 	}
 }

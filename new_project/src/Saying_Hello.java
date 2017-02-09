@@ -1,4 +1,4 @@
-package new_project;
+
 
 public class Saying_Hello {
 	public static void main(String args[]){
