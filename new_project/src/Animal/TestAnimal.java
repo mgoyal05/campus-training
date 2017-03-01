@@ -12,7 +12,7 @@ public class TestAnimal {
 	    Bigdog1.greeting();
 	     
 	    // Using Polymorphism
-	    Animal animal1 = new Cat();
+	   /* Animal animal1 = new Cat();
 	    animal1.greeting();
 	    Animal animal2 = new Dog();
 	    animal2.greeting();
@@ -29,7 +29,7 @@ public class TestAnimal {
 	    dog3.greeting(dog2);
 	    dog2.greeting(Bigdog2);
 	    Bigdog2.greeting(dog2);
-	    Bigdog2.greeting(Bigdog1);
+	    Bigdog2.greeting(Bigdog1);*/
 
 }
 
