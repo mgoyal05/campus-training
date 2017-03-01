@@ -1,13 +1,27 @@
 public class Circle{
-	public static void main(String[] args){
-		circle c = new circle();
-		c.radius = 1/Math.sqrt(Math.PI);
-		c.area = Math.PI*Math.pow(c.radius, 2);
-		System.out.println(c.area);
+	private double radius;
+	private String color;
+	public Circle(){
+		radius = 1.0;
+		color = "red";
 	}
 
-}
-class circle{
-	double radius;
-	double area;
+	public String toString(){
+		return "Circle \nradius : "+ radius + "color : " + color;
+	}
+	
+	public Circle(double radius){
+		this.radius = radius;
+		color = "red";
+	}
+	public Circle(double r, String c){
+		radius = r;
+		color = c;
+	}
+	public double getRadius(){
+		return radius;
+	}
+	public double getArea(){
+		return Math.PI*radius*radius;
+	}
 }
