@@ -1,0 +1,113 @@
+body{
+    font-family: helvetica, cursive,sans-serif;
+    color: fuchsia;
+}
+
+#wrapper{
+    width: auto;
+    height: 170px;
+    overflow: auto;
+    border: 3px solid black;
+}
+
+#top{
+    background: url(background-abstract-notebook-stupendi-desktop-sfondi-picture-color-wallpaper-cartoon-colors-napakaganda-787.jpg) fixed repeat;
+    background-size:100% 100%;
+    height: 150px;
+    padding: 10px;
+}
+#logo{  
+    float: left;
+    margin: 0px 0 0 10px;
+}
+
+#tab{
+    float: right;
+    width: 40%;
+    font-size: 1em;
+}
+
+#tab a{
+    color: blue;
+    font-family: Monotype corsiva;
+    font-size: 2em;
+    font-size-adjust: auto;
+}
+
+#tab ul li{
+    float: left;
+    list-style: none;
+    padding-left: 30px;
+}
+#tab ul li a:hover{
+    color:deeppink;
+}
+
+#bottom{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#content{
+    color: #fa7393;
+    font-size: 2em;
+    margin-top:1em;
+}
+
+#mypic{
+    background-image: url(Profile_pic.png) no-repeat;
+    float: right;
+    margin-right: 4em;
+}
+
+#desc{
+    font-family: Arial black;
+    font-size: 2em;
+    color: black;
+    line-height: 0.6em;
+    margin-top: .5em;
+    margin-left: 1em;
+}
+#aboutme{
+    margin: 2em 10em 0 25em;
+}
+#aboutme a{
+    font-family: Monotype Corsiva;
+    background-color: orangered;
+    border: hidden .2em pink;
+    border-radius: .3em;
+    font-size: 2em;
+    color: white;
+}
+#aboutme a:hover{
+    color: greenyellow;
+}
+
+#interest {
+	background:#f7f7f7;
+	border:1px solid black;
+    border-radius: 4em;
+	padding:15px;
+    font-family: cursive;
+    color: black;
+    margin: 2em 60em 0 2em;
+}
+
+#contact{
+    color:darkorange;
+    font-family: cursive;
+    font-size: 2em;
+}
+#footer {
+	background:#f7f7f7;
+	border-top:1px solid #f0e9eb;
+	padding:10px 15px;
+	clear:both;
+}
+
+#footer a{
+    margin-left: 13em;
+    align-content: center;
+}
