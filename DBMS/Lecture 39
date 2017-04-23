@@ -1,0 +1,56 @@
+select ProductName, SupplierID from Products where SupplierID in (Select SupplierID from Suppliers where CompanyName in ("Exotic Liquids", "Grandma Kelly's Homestead","Tokyo Traders"));
++---------------------------------+------------+
+| ProductName                     | SupplierID |
++---------------------------------+------------+
+| Chang                           |          1 |
+| Aniseed Syrup                   |          1 |
+| Grandma's Boysenberry Spread    |          3 |
+| Uncle Bob's Organic Dried Pears |          3 |
+| Northwoods Cranberry Sauce      |          3 |
+| Mishi Kobe Niku                 |          4 |
+| Ikura                           |          4 |
+| Longlife Tofu                   |          4 |
++---------------------------------+------------+
+
+select ProductName from Products where CategoryID = (Select CategoryID from Categories where CategoryName = "Seafood");
++---------------------------------+
+| ProductName                     |
++---------------------------------+
+| Ikura                           |
+| Konbu                           |
+| Carnarvon Tigers                |
+| Nord-Ost Matjeshering           |
+| Inlagd Sill                     |
+| Gravad lax                      |
+| Boston Crab Meat                |
+| Jack's New England Clam Chowder |
+| Rogede sild                     |
+| Spegesild                       |
+| Escargots de Bourgogne          |
++---------------------------------+
+
+select CompanyName from Suppliers where SupplierID in (Select SupplierID from Products where CategoryID = 8);
++----------------------------------------+
+| CompanyName                            |
++----------------------------------------+
+| Escargots Nouveaux                     |
+| Lyngbysild                             |
+| Mayumi's                               |
+| New England Seafood Cannery            |
+| Nord-Ost-Fisch Handelsgesellschaft mbH |
+| Pavlova, Ltd.                          |
+| Tokyo Traders                          |
++----------------------------------------+
+
+select CompanyName from Suppliers where SupplierID in (Select SupplierID from Products where CategoryID in (Select CategoryID from Categories where CategoryName = "Seafood"));
++----------------------------------------+
+| CompanyName                            |
++----------------------------------------+
+| Tokyo Traders                          |
+| Mayumi's                               |
+| Pavlova, Ltd.                          |
+| Nord-Ost-Fisch Handelsgesellschaft mbH |
+| New England Seafood Cannery            |
+| Lyngbysild                             |
+| Escargots Nouveaux                     |
++----------------------------------------+
